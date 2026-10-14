@@ -1,0 +1,216 @@
+/* Color Palette
+#0D1B2A - color 1 (dark navy: header & footer background)
+#415A77 - color 2 (slate blue: education background)
+#778DA9 - color 3 (steel blue: links & accents)
+#E0E1DD - color 4 (off white: work experience background, light text)
+#B4C2D3 - color 5 (light blue: certifications background)
+*/
+
+/* Global styles
+------------------------------------*/
+/* border box fix */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    /*background: lightblue;*/
+    background: #E0E1DD;
+    color: #0D1B2A;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 32px 0 4px;
+}
+
+p {
+    margin: 0 0 12px;
+}
+
+b {
+    font-weight: 600;
+}
+
+section h2 {
+    width: fit-content;
+    margin: 0;
+    padding-bottom: 8px;
+    border-bottom: 4px solid #778DA9;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Header & Footer
+------------------------------------*/
+header,
+footer {
+    background: #0D1B2A;
+    color: #E0E1DD;
+}
+
+header h2,
+footer h2 {
+    color: #778DA9;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+.profile-img {
+    border-radius: 50%;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+header p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    margin: 0 0 24px;
+}
+
+footer a {
+    color: #778DA9;
+    font-weight: 600;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #E0E1DD;
+}
+
+footer p {
+    margin: 32px 0 0;
+    font-size: 14px;
+}
+
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+    background: #E0E1DD;
+    color: #0D1B2A;
+}
+
+.work-experience h2 {
+    margin-bottom: 32px;
+}
+
+.column-narrow h3 {
+    margin-top: 0;
+}
+
+/* Company line and date line right under the job title */
+.work-experience h3 + p {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.work-experience h3 + p + p {
+    color: #415A77;
+}
+
+
+/* Education
+------------------------------------*/
+.education {
+    background: #415A77;
+    color: #E0E1DD;
+}
+
+.education h2 {
+    border-bottom-color: #E0E1DD;
+}
+
+
+/* Certifications
+------------------------------------*/
+.certifications {
+    background: #B4C2D3;
+    color: #0D1B2A;
+}
+
+.certifications h2 {
+    border-bottom-color: #0D1B2A;
+}
+
+
+/* Small screens
+------------------------------------*/
+@media (max-width: 640px) {
+    header {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
