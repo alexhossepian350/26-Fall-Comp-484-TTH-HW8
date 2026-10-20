@@ -7,11 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- // Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#work">Work Experience</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+        <a href="files/Alex_Hossepian_Resume.pdf" download>Download PDF</a>
+    </nav>
+
     <!-- // Intro -->
-    <header>
+    <header id="about">
         <div class="content-wrap">
             <img class="profile-img column-narrow" src="images/Alex Photo.png" alt="Profile photo">
             <div class="column-wide">
@@ -25,7 +36,7 @@
 
     <main>
         <!-- // Work Experience -->
-        <section class="work-experience">
+        <section class="work-experience" id="work">
             <div class="content-wrap">
                 <h2>Work Experience</h2>
 
@@ -57,7 +68,7 @@
 
 
         <!-- // Education -->
-        <section class="education">
+        <section class="education" id="education">
             <div class="content-wrap">
                 <h2>Education</h2>
 
@@ -75,7 +86,7 @@
 
         <!-- // Certifications -->
         <!-- I wanted to make certifications its own section because to me I want to display that outside of just education. I wanted to also make it slightly different than other people's. -->
-        <section class="certifications">
+        <section class="certifications" id="certifications">
             <div class="content-wrap">
                 <h2>Certifications</h2>
 
@@ -91,15 +102,15 @@
     </main>
 
     <!-- // Footer & contact info -->
-    <footer>
+    <footer id="contact">
         <div class="content-wrap">
             <h2>Reach Out At</h2>
 
             <!-- Social media and contact links. Add or remove any networks. -->
             <div class="contact-info">
-                <a href="mailto:hossepianalex056@gmail.com">hossepianalex056@gmail.com</a>
-                <a href="tel:+18183035173">818-303-5173</a>
-                <a href="https://linkedin.com/in/alex-hossepian" target="_blank">LinkedIn</a>
+                <a href="mailto:hossepianalex056@gmail.com"><i class="fa-solid fa-envelope"></i> hossepianalex056@gmail.com</a>
+                <a href="tel:+18183035173"><i class="fa-solid fa-phone"></i> 818-303-5173</a>
+                <a href="https://linkedin.com/in/alex-hossepian" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </div>
 
             <p>Copyright 2026 by Alex Hossepian</p>

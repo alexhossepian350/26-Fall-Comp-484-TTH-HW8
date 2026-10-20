@@ -16,6 +16,7 @@ In this hw, you’ll continue working on your resume site. You can continue buli
 
 3. Add a background image to one of your resume sections.
             a. Make use of the RGB and Alpha transparency to add a gradiant to your image. Some examples are shown in the lecture material.  
+            b. Make sure that the background is fixed and doesnt move when scrolling.
 
 
  

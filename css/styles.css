@@ -28,6 +28,7 @@ body {
     font-weight: 400;
     line-height: 1.6;
     margin: 0;
+    padding-top: 66px; /* room for the fixed nav bar */
 }
 
 .content-wrap {
@@ -92,6 +93,37 @@ section h2 {
 
 li {
     margin-bottom: 8px;
+}
+
+
+/* Navigation
+------------------------------------*/
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #E0E1DD;
+    text-align: center;
+    padding: 10px;
+    z-index: 10;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #0D1B2A;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #778DA9;
+}
+
+/* Keeps section headings from hiding under the nav bar when a menu link is clicked */
+html {
+    scroll-padding-top: 66px;
 }
 
 
@@ -182,7 +214,8 @@ footer p {
 /* Education
 ------------------------------------*/
 .education {
-    background: #415A77;
+    background: linear-gradient(rgba(65, 90, 119, 0.212), rgba(5, 33, 63, 0.75)) fixed,
+                url(../images/csun.jpg) no-repeat fixed center / cover;
     color: #E0E1DD;
 }
 
